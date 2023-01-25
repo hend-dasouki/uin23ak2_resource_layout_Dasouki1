@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+
+:root{ 
+  
+    --white:#ffffff;
+    --black:#000000;
+    --aqua:#00ffff;
+    --grå:#DCDCDC;
+    --darkgrå:#696969
+    --maxwidth: 1200px;
+    
+}
+body{
+background-color: var(--white);
+font-family: 'quicsand', sans-serif; 
+margin: 4%;
+
+}
+
+
+
+div.container{
+    width: 100%;
+    max-width:var(--maxwidth);
+    margin: 0 auto;
+    background-color: var(--white);
+    overflow: hidden;
+} 
+header{
+    width: 68%;
+    display: flex;
+    border-style: groove;
+    justify-content: space-between;
+    padding: 1rem;
+  
+
+}
+h1{
+    text-transform: uppercase;
+    color: grey;
+}
+
+
+h2{
+    color: grey;
+}
+    
+    
+
+nav{
+    border: gray;
+    display: flex;
+    width: 75%;
+    left: -3.4%;
+    height: 250px;
+    position: relative;
+ 
+
+}
+menu{
+    position:relative;
+    width: 100%;
+
+}
+
+nav button{ 
+    color:var(--black);
+    border-style: solid;
+    text-decoration: none;
+    border-bottom: 5px groove var(--aqua);
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+  nav button:hover { 
+    color: var(--white);
+    border-color: var(--aqua);
+    background-color: var(--aqua);
+   
+} 
+
+
+
+#subMenu{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    
+} 
+
+   div.open{
+    display:none;
+}       
+.mainMenuItem:hover .open {
+    position: fixed; 
+    display: block;
+    top: auto;
+    padding: 1rem;
+    width: 63.5%;
+ 
+} 
+div .open{
+    border-style:solid;
+    border-top-style:  groove; 
+    border-color: var(--grå);   
+    border-top-color: var(--aqua); 
+    border-width: 2px;
+    padding: 5rem;
+    height: 50%;
+
+   
+}  
+
+@media  screen and (max-width: 950px){
+      
+ nav button{ 
+        color:var(--black);
+        border-style: groove;
+        border-bottom: 1px solid var(--aqua);
+        display: inline-block;
+         padding: .1rem 1rem ; 
+        
+         text-transform: uppercase; 
+        justify-content: space-between; 
+    }
+      
+ 
+.mainMenuItem:hover .open {
+     position: fixed;  
+    display: block;
+    top: auto;
+    padding: 1rem;
+    border-style: groove;
+    width: 86.5%;
+    border-top: 5px solid var(--aqua);
+    
+} }
+/* https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery */
